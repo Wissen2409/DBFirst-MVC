@@ -1,0 +1,41 @@
+﻿@using DBFirst_MVC.DMO
+@using System.Collections.Generic
+
+
+@model List<Product>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Color</th>
+            <th scope="col">List Price</th>
+            <th scope="col">SafetyStockLevel</th>
+            <th scope="col">Style</th>
+            <th scope="col">Size</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (Product item in Model)
+        {
+            <tr>
+                <th scope="row">@item.ProductId</th>
+                <td>@item.Name</td>
+                <td>@item.Color</td>
+                <td>@item.ListPrice</td>
+                <td>@item.SafetyStockLevel</td>
+                <td>@item.Style</td>
+                <td>@item.Size</td>
+
+            </tr>
+
+
+        }
+
+
+
+    </tbody>
+</table>
