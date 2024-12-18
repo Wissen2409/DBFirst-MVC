@@ -13,9 +13,7 @@ public class HomeController : Controller
     public HomeController(Db11596Context context)
     {
         _context = context;
-       
     }
-
     public IActionResult Index()
     {
 
@@ -53,7 +51,7 @@ dotnet ef dbcontext scaffold "Name=DefaultConnection" Microsoft.EntityFrameworkC
       return View(products);
     }
 
-    public IActionResult Privacy(int id)
+    public IActionResult Privacy()
     {
        var binaryImage =  _context.ProductPhotos.Where(s=>s.ProductPhotoId==70).FirstOrDefault();
         // actionlar geriye view partial view, json ve image dönebilirler!!
@@ -68,4 +66,6 @@ dotnet ef dbcontext scaffold "Name=DefaultConnection" Microsoft.EntityFrameworkC
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+   
 }

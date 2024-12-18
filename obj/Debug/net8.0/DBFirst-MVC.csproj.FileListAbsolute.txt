@@ -166,3 +166,4 @@
 /Users/emrahelis/DBFirst-MVC/obj/Debug/net8.0/DBFirst-MVC.pdb
 /Users/emrahelis/DBFirst-MVC/obj/Debug/net8.0/DBFirst-MVC.genruntimeconfig.cache
 /Users/emrahelis/DBFirst-MVC/obj/Debug/net8.0/ref/DBFirst-MVC.dll
+/Users/emrahelis/DBFirst-MVC/obj/Debug/net8.0/DBFirst-MVC.sourcelink.json
